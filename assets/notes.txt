@@ -21,6 +21,7 @@ secondary font color
 
 fonts.google.com ---
 
+REVIEW SCEMANTIC TAGS  !!!
 
 
 
