@@ -29,7 +29,7 @@ body {
     padding: 0 50px; /*0px top-bottom 50px left-right*/
 }
 
-.navbar h2{
+.navbar h2 {
     color: var(--font-color-primary);
     font-weight: 600; /*font weight must be imported first*/
 }
