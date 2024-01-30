@@ -24,5 +24,8 @@ fonts.google.com ---
 
 REVIEW SCEMANTIC TAGS  !!!
 
+border-radius --
+setting it to 50% will be a circle, good for circular images 
+
 
 

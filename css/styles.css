@@ -34,3 +34,46 @@ body {
     font-weight: 600; /*font weight must be imported first*/
 }
 
+.navbar ul {
+    display: flex; /*default display for flex is row 'flex it out'*/
+}
+
+.navbar ul li {
+    list-style:none ; /*remove bullet points*/
+}
+
+.navbar ul li a {
+    text-decoration: none; /*remove underline*/
+    color: var(--font-color-secondary);
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3s ease; /*animated effect, 3 values...
+    what change will happen, 
+    for how long will the animattion take, 
+    what kind of animation will it be*/
+}
+
+.navbar ul li:hover a { /* pseudo-class behavior to trigger transition and define AFTER effect */
+    color: var(--font-color-primary);
+}
+
+.navbar ul li:last-child a{
+    margin: 0;
+}
+
+.hire-btn {
+    background: var(--backup-color);
+    color: var(--font-color-primary);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background: var(--font-color-secondary);
+    color: var(--bg-primary);
+}
