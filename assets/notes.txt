@@ -18,6 +18,7 @@ for primary bg color
 2nd bg color 
 primary font color 
 secondary font color 
+backup color
 
 fonts.google.com ---
 

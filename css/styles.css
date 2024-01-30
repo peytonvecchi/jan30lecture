@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*choose font family*/
     font-family: "Poppins", "Courier New", "Courier", "monospace";
     /* setup color variables for css */
     --bg-primary: #2d2a32; /*invoke --> var(--bg-primary)*/
@@ -11,5 +12,20 @@
     --font-color-primary: #f4f4f9;
     --font-color-secondary: #e2c044;
     --backup-color: #de6b48;
+}
+
+body {
+    height: 100vh; /*100 veiwport height*/
+    background: var(--bg-primary);
+}
+
+/*style the header and nav bar*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
 }
 
