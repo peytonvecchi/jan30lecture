@@ -1,0 +1,26 @@
+center a div ---
+
+display: flex
+align-tems: center
+justify-content: space-evenly -between -around
+flex-direction: column
+
+useful resources ---
+
+Box icons, give your UI some neat icons
+boxicons.com 
+boxicons.com/usage
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+coolors.co ---
+for primary bg color 
+2nd bg color 
+primary font color 
+secondary font color 
+
+fonts.google.com ---
+
+
+
+
