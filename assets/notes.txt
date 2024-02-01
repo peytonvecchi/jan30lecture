@@ -28,4 +28,6 @@ border-radius --
 setting it to 50% will be a circle, good for circular images 
 
 
+free images and videos = pexels.com
+
 

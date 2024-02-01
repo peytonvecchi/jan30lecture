@@ -1,79 +1,293 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*choose font family*/
-    font-family: "Poppins", "Courier New", "Courier", "monospace";
-    /* setup color variables for css */
-    --bg-primary: #2d2a32; /*invoke --> var(--bg-primary)*/
-    --bg-secondary: #b07156;
-    --font-color-primary: #f4f4f9;
-    --font-color-secondary: #e2c044;
-    --backup-color: #de6b48;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*choose font family*/
+  font-family: "Poppins", "Courier New", "Courier", "monospace";
+  /* setup color variables for css */
+  --bg-primary: #2d2a32; /*invoke --> var(--bg-primary)*/
+  --bg-secondary: #b07156;
+  --font-color-primary: #f4f4f9;
+  --font-color-secondary: #e2c044;
+  --backup-color: #de6b48;
 }
 
 body {
-    height: 100vh; /*100 veiwport height*/
-    background: var(--bg-primary);
+  height: 100vh; /*100 veiwport height*/
+  background: var(--bg-primary);
 }
 
 /*style the header and nav bar*/
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 50px; /*0px top-bottom 50px left-right*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px; /*0px top-bottom 50px left-right*/
 }
 
 .navbar h2 {
-    color: var(--font-color-primary);
-    font-weight: 600; /*font weight must be imported first*/
+  color: var(--font-color-primary);
+  font-weight: 600; /*font weight must be imported first*/
 }
 
 .navbar ul {
-    display: flex; /*default display for flex is row 'flex it out'*/
+  display: flex; /*default display for flex is row 'flex it out'*/
 }
 
 .navbar ul li {
-    list-style:none ; /*remove bullet points*/
+  list-style: none; /*remove bullet points*/
 }
 
 .navbar ul li a {
-    text-decoration: none; /*remove underline*/
-    color: var(--font-color-secondary);
-    font-size: 16px;
-    margin-right: 25px;
-    transition: color 0.3s ease; /*animated effect, 3 values...
+  text-decoration: none; /*remove underline*/
+  color: var(--font-color-secondary);
+  font-size: 16px;
+  margin-right: 25px;
+  transition: color 0.3s ease; /*animated effect, 3 values...
     what change will happen, 
     for how long will the animattion take, 
     what kind of animation will it be*/
 }
 
-.navbar ul li:hover a { /* pseudo-class behavior to trigger transition and define AFTER effect */
-    color: var(--font-color-primary);
+.navbar ul li:hover a {
+  /* pseudo-class behavior to trigger transition and define AFTER effect */
+  color: var(--font-color-primary);
 }
 
-.navbar ul li:last-child a{
-    margin: 0;
+.navbar ul li:last-child a {
+  margin: 0;
 }
 
 .hire-btn {
-    background: var(--backup-color);
-    color: var(--font-color-primary);
-    padding: 6px 30px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background 0.3s ease;
-    transition: color 0.3s ease;
+  background: var(--backup-color);
+  color: var(--font-color-primary);
+  padding: 6px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .hire-btn:hover {
-    background: var(--font-color-secondary);
-    color: var(--bg-primary);
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
 }
+
+/*Style for hero section */
+
+.main {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h4 {
+  font-size: 32px;
+  color: var(--font-color-primary);
+  font-weight: 600px;
+}
+
+.main h4 span {
+  color: var(--font-color-secondary);
+  text-decoration: underline;
+}
+
+.main p.title {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--font-color-primary);
+  margin-top: 8px;
+}
+
+.main p.subtitle {
+  font-size: 16px;
+  color: var(--font-color-primary);
+  margin: 20px;
+}
+
+.main img {
+  width: 200px;
+  margin-top: 75px;
+  border-radius: 50%;
+}
+
+/*style for the services assurance sub section*/
+
+.services-assurance {
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.services-assurance .item {
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services-assurance .item:hover {
+  border-color: var(--font-color-primary);
+}
+
+.services-assurance .item .icon {
+  width: 46px;
+  height: 46px;
+  background: var(--font-color-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.services-assurance .item:hover .icon {
+  background: var(--font-color-primary);
+}
+
+.services-assurance .item .icon i {
+  font-size: 36px;
+}
+
+.services-assurance .item .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-assurance .item .info h3 {
+  color: var(--font-color-secondary);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*add transition*/
+
+.services-assurance .item .info p {
+  color: var(--font-color-primary);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.services-assurance .item > i {
+  color: var(--bg-primary);
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.services-assurance .item:hover > i {
+  color: var(--font-color-primary);
+}
+
+.section-separator-title {
+  margin: 50px 50px 30px;
+  padding: 10px 20px;
+  background: rbga(255, 255, 255, 0.08);
+  display: inline-block;
+  color: var(--font-color-secondary);
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+/*style about me section*/
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  gap: 80px;
+  padding: 0 50px;
+}
+
+.about-me .info h3 {
+  color: var(--backup-color);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-me .info p {
+  color: var(--font-color-primary);
+  font-size: 14px;
+}
+
+.about-me .info button {
+  margin-top: 30px;
+}
+
+.about-me img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+/*style the skill set*/
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.skills .left {
+  width: 600px;
+}
+
+.skills .left .info h3 {
+  color: var(--backup-color);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.skills .left .info p {
+  color: var(--font-color-primary);
+  font-size: 14px;
+}
+
+.skills .left .info button {
+  margin-top: 30px;
+}
+
+.skills .right {
+  width: 420px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills .right .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--font-color-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.skills .right .item i {
+  font-size: 34px;
+  color: var(--bg-primary);
+}
+
+/* Styling the footer here FIGURE OUT HOW TO DO VERTICAL HEADER*/
