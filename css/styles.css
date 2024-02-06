@@ -212,7 +212,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
   gap: 80px;
   padding: 0 50px;
 }
@@ -291,3 +290,234 @@ body {
 }
 
 /* Styling the footer here FIGURE OUT HOW TO DO VERTICAL HEADER*/
+
+footer {
+  position: relative;
+  background: var(--backup-color);
+  padding: 80px 50px 40px;
+  margin-top: 100px;
+}
+
+footer .start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  background-color: var(--font-color-secondary);
+  padding: 30px 25px;
+  border-radius: 30px;
+  width: 70%;
+  top: -13%;
+  left: 15%;
+}
+
+footer .start p {
+  font-size: 13px;
+  width: 35%;
+}
+
+footer .start button {
+  background: transparent;
+  border: 1px solid var(--bg-primary);
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+footer .start button:hover {
+  background-color: var(--backup-color);
+  border-color: var(--font-color-primary);
+  color: var(--font-color-primary);
+}
+
+footer .cols {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .cols .about-col {
+  flex: 2;
+}
+
+footer .cols .about-col h3 {
+  color: var(--font-color-primary);
+  margin-bottom: 20px;
+}
+
+footer .cols .about-col p {
+  color: var(--font-color-primary);
+  font-size: 15px;
+}
+
+footer .cols .links-col {
+  flex: 3;
+}
+
+footer .cols .links-col h4,
+footer .cols .news-col h4 {
+  color: var(--font-color-primary);
+  margin-bottom: 20px;
+}
+
+footer .cols .links-col a {
+  display: block;
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-size: 14px;
+  line-height: 26px;
+  transition: color 0.3s;
+}
+
+footer .cols .links-col a:hover {
+  color: var(--font-color-secondary);
+}
+
+footer .cols .news-col {
+  flex: 3;
+}
+
+footer .cols .news-col p {
+  color: var(--bg-primary);
+  font-size: 15px;
+}
+
+footer .cols .news-col form {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+footer .cols .news-col form input {
+  width: 100%;
+  background: var(--font-color-secondary);
+  border: none;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+footer .cols .news-col form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: var(--bg-primary);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer .cols .news-col form button:hover {
+  background: var(--font-color-primary);
+}
+
+footer .cols .news-col form button i {
+  font-size: 26px;
+  color: var(--font-color-primary);
+}
+
+footer .cols .news-col .form:hover i {
+  color: var(--bg-primary);
+}
+
+/*responsive styling here*/
+
+/*
+  typical breakpoints: 1100px - desktop
+  780px: big laptop screen
+  650px: Tablets
+  480px: mobile screens
+*/
+
+@media screen and (max-width: 1100px) {
+  .services-assurance {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .services-assurance .item {
+    flex-basis: 49%;
+  }
+
+  .skills {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .skills .left {
+    width: 500px;
+  }
+
+  .skills .left .info h3 {
+    font-size: 20px;
+  }
+
+  .skills .left .info p {
+    font-size: 12px;
+  }
+
+  footer {
+    margin-top: 150px;
+  }
+
+  footer .start {
+    width: 90%;
+    left: 5%;
+    top: -20%;
+  }
+
+  footer .cols {
+    flex-wrap: wrap;
+  }
+
+  footer .cols .about-col {
+    flex-basis: 50%;
+  }
+
+  footer .col .links-col {
+    flex-basis: 50%;
+  }
+
+  footer .cols .news-col {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .navbar button {
+    display: none;
+  }
+
+  .main h4 {
+    font-size: 24px;
+  }
+
+  .main p.title {
+    font-size: 36px;
+  }
+
+  .main p.subtitle {
+    font-size: 14px;
+  }
+
+  .services-assurance .item {
+    flex-basis: 100%;
+  }
+
+  .about-me {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 480px) {
+}
