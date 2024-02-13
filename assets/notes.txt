@@ -31,3 +31,27 @@ setting it to 50% will be a circle, good for circular images
 free images and videos = pexels.com
 
 
+JS 
+
+scope
+
+JS is dynamic 
+
+TS is compiled version of JS
+
+let age = 42;
+let age = 'john';
+
+const age = 42;
+var = global scope <-- NOT SAFE!!! because it is global, use let or const instead.
+
+<script></script> <-- these tags con"nect the script to the html
+
+connect to DOM nodes in html and bring those nodes into JS code, for this...use and API (API acts as a bridge)
+API: document(DOM) <-- accesses DOM structure
+
+let object = document.getElementByClassName("description");
+
+EVENTS: click, db click, onChange (for text fields)
+
+

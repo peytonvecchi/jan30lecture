@@ -1,0 +1,85 @@
+/* any external google fonts */
+/* reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden; /* wont be able to scroll, and content won't bleed out of the container */
+
+}
+
+video {
+    /* to make video span the entire screen */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* covers whole container space */
+
+}
+
+header {
+    /* centering and item while not using flexbox */
+    position: absolute; /* find out what this means */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* moves along the x and y coordinates */
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header span {
+    font-weight: 800;
+    font-size: 6rem;
+    display: block;
+}
+
+.description {
+    /* another way to center an item*/
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto; /* margin: 0 auto */
+    background-color: #000;
+    border-radius: 15px;
+    opacity: 0.5; /* value from 0 to 1 */
+    padding: 1.5rem;
+}
+
+.description p {
+    color: white;
+    text-align: justify;
+    max-width: 42rem;
+    margin-inline: auto;
+    line-height: 1.5;
+
+}
+
+.copyright {
+    font-size: 0.65rem;
+}
+
+.copyright a {
+    color: #fff;
+    text-underline-offset: 1.8px;
+}
+
+/* responsive styling starts here */
+@media screen and (max-width: 1100px){
+    .description {
+        position: absolute;
+        width: 91vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.6rem;
+    }
+}
